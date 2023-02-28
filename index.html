@@ -4,24 +4,57 @@
 	<title>August & Harper</title>
 	<style>
 		body{
+			background-color:#043b72;
+			color:#ffffff;
 			font-family:Arial;
 			text-align:center;
 			font-size:150%;
+			margin:0;
+			padding:0;
+		}
+		div,span{
+			margin:0;
+			padding:0;
+		}
+		a{
+			color:#bec2c8;
 		}
 		h1{
 			font-family:Georgia;
 			margin:3em 0;
 		}
-		div{
-			margin:2em 0;
-		}
 		.strong{
 			font-weight:bold;
 		}
+		.person{
+			margin-top:2em;
+		}
+		#top, #bottom, #left, #right {
+			background: #062241;
+			position: fixed;
+			}
+		#left, #right {
+			top: 0; bottom: 0;
+			width: 1em;
+			}
+		#left { left: 0; }
+		#right { right: 0; }
+	
+		#top, #bottom {
+			left: 0; right: 0;
+			height: 1em;
+			}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
 	</style>
 </head>
 <body>
-	
+
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
 <h1>August & Harper</h1>
 
 <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -34,15 +67,16 @@ Suite 100<br />
 <span itemprop="postalCode">23221</span>
 </div>
 
-<div itemscope itemtype="https://schema.org/Person">
+<div class="person" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name" class="strong">Andrew Ritz</span><br />
 <a href="mailto:drew@august-harper.com" itemprop="email">drew@august-harper.com</a>
 </div>
 
-<div itemscope itemtype="https://schema.org/Person">
+<div class="person" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name" class="strong">Neil Cox</span><br />
 <a href="mailto:neil@august-harper.com" itemprop="email">neil@august-harper.com</a>
 </div>
+
 
 </body>
 </html>
